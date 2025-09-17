@@ -1,39 +1,49 @@
-# sales_analysis
-Sales data analysis end to end project using Python, Sql and Power BI
 # Sales Analysis Project
 
-This project focuses on analyzing sales data to uncover trends, insights, and patterns using **SQL** and **Power BI**. It demonstrates end-to-end data analysis and visualization skills relevant for business intelligence and data analyst roles.
+This project focuses on analyzing sales data to uncover key business insights using **SQL**, **Python**, and **Power BI**. The goal is to track revenue, profit, and costs while visualizing sales trends to inform business decisions.
 
 ---
 
 ## Project Overview
 
-The goal of this project is to analyze sales data to answer business questions such as:
+The Sales Analysis project performs:
 
-- Total sales by region and product category  
-- Monthly and quarterly revenue trends  
-- Top-performing products and customers  
-- Seasonal trends and sales forecasting  
+1. **Revenue and Cost Calculation**  
+   - **Total Revenue**: Sum of all sales orders  
+   - **Total Cost**: `Order Quantity * Total Unit Cost`  
+   - **Profit**: `Total Revenue - Total Cost`  
+   - **Profit Margin %**: `(Profit / Revenue) * 100`
+
+2. **Exploratory Data Analysis (EDA)**  
+   - Analyze sales trends over time  
+   - Detect seasonality and spikes in sales  
+   - Identify monthly and yearly revenue patterns  
+   - Detect outliers in revenue and profit  
+
+3. **Dashboard Design**  
+   - Designed interactive dashboards in Power BI  
+   - Features include KPIs like Total Revenue, Total Profit, Profit Margin %, Number of Orders, and Revenue per Order  
+   - Multiple pages for insights: Overview, Product/Channel Performance, Geographic Insights, and Q&A
 
 ---
 
 ## Tools & Technologies
 
-- **SQL**: For data extraction, cleaning, and aggregation  
-- **Power BI**: For interactive dashboards and data visualization  
-- **Excel / CSV**: For dataset storage and pre-processing  
+- **SQL**: For data extraction and calculations  
+- **Python (Pandas & Matplotlib)**: For data preprocessing and monthly sales trend visualization  
+- **Power BI**: For interactive dashboards  
+- **Excel/CSV**: Data source and pre-processing  
 
 ---
 
 ## Dataset
 
-The dataset contains sales details such as:
+The dataset includes:
 
-- Order ID  
-- Product Name & Category  
-- Customer information (anonymized)  
-- Order Date and Quantity  
-- Revenue and Discounts  
+- Order ID, Order Date  
+- Product and Category information  
+- Customer and regional information  
+- Quantity, Unit Cost, Total Revenue  
 
 > *Note: This dataset is anonymized/sample data for analytical purposes.*
 
@@ -41,53 +51,44 @@ The dataset contains sales details such as:
 
 ## Power BI Dashboard
 
-Visual representation of key insights from the sales data:
+Visual representation of key insights:
 
-### Dashboard Overview 1
+### Overview Page
 ![Dashboard 1](images/dashboard1.png)
 
-### Dashboard Overview 2
+### Product/Channel Performance
 ![Dashboard 2](images/dashboard4.png)
 
-### Dashboard Overview 3
+### Geographic Insights / Q&A
 ![Dashboard 3](images/dashboard5.png)
 
-**Key Features:**
+**Features:**
 
-- Interactive charts showing sales trends over time  
-- Bar charts comparing products, categories, and regions  
-- Slicers to filter by month, region, or product category  
-- Highlights top-performing products and revenue trends  
-
----
-
-## Project Files
-
-- `Sales_Analysis.sql` → SQL scripts for data analysis  
-- `Sales_Analysis.pbix` → Power BI dashboard file  
-- `README.md` → Project documentation  
-- `images/` → Screenshots of the dashboards  
+- Interactive charts to explore trends  
+- Filter by month, region, or product category  
+- Highlight top-performing products and regions  
+- KPIs displayed in summary boxes  
 
 ---
 
 ## Insights & Findings
 
-- Top-selling product: **[Insert your result]**  
-- Peak sales months: **[Insert your result]**  
-- Revenue trends: **[Insert your result]**  
-- Regional performance: **[Insert your result]**  
+- Peak sales months: **January, October**  
+- Total revenue consistently between **23M–26M**  
+- Outliers detected during **January** (lower spike) and **July** (higher spike)  
+- Key KPIs: Total Revenue, Total Profit, Profit Margin %, Number of Orders, Revenue per Order  
 
 ---
 
 ## How to Run
 
-1. Open `Sales_Analysis.sql` in your SQL environment to extract and analyze data.  
-2. Load the processed data into Power BI Desktop.  
-3. Open `Sales_Analysis.pbix` to explore interactive dashboards.  
+1. Open `Sales_Analysis.sql` in your SQL environment to calculate revenue, cost, and profit.  
+2. Use `Sales_Analysis.ipynb` to explore EDA and plot monthly trends.  
+3. Open `Sales_Analysis.pbix` in Power BI to view interactive dashboards.  
 
 ---
 
 ## Contact
 
-For questions or feedback, reach out at **[Your Email]**  
-GitHub: [https://github.com/yourusername/Sales-Analysis](https://github.com/yourusername/Sales-Analysis)
+For questions or feedback, reach out at **[yash127pandey@gmail.com]**  
+
